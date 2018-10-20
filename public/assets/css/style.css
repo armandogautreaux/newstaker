@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 300;
+}
+
+.montse {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.jumbotrom-inner {
+  background: url('../images/newspaper.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+}
+
+.jumbotrom-overlay {
+  background-color: rgba(102, 102, 102, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 500px;
+}
