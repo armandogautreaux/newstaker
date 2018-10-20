@@ -1,18 +1,21 @@
 // REQUIRE DEPENDENCIES
-var mongoose = require('mongoose');
+// var mongoose = require('mongoose');
 var express = require('express');
 var router = express.Router();
 var axios = require('axios');
 var cheerio = require('cheerio');
 
 //  REQUIRE CONNECTION PATH
-var MONGODB_URI = require('../config/connection');
+// var MONGODB_URI = require('../config/connection');
 
 // REQUIRE MODEL
 var db = require('../models');
 
 //CONECT DB TO MONGOOSE
-mongoose.connect(MONGODB_URI);
+// mongoose.connect(
+//   MONGODB_URI,
+//   { useNewUrlParser: true }
+// );
 
 //Get Route -HOME PAGE
 router.get('/', function(req, res) {
