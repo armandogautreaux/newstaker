@@ -1,6 +1,8 @@
-//DEPENDENCIES
+//DEPENDENCY (.ENV)
 var dotenv = require('dotenv');
 dotenv.config();
+
+//OTHER DEPENDENCIES
 var express = require('express');
 var logger = require('morgan');
 var exphbs = require('express-handlebars');

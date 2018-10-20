@@ -1,21 +1,11 @@
 // REQUIRE DEPENDENCIES
-// var mongoose = require('mongoose');
 var express = require('express');
 var router = express.Router();
 var axios = require('axios');
 var cheerio = require('cheerio');
 
-//  REQUIRE CONNECTION PATH
-// var MONGODB_URI = require('../config/connection');
-
 // REQUIRE MODEL
 var db = require('../models');
-
-//CONECT DB TO MONGOOSE
-// mongoose.connect(
-//   MONGODB_URI,
-//   { useNewUrlParser: true }
-// );
 
 //Get Route -HOME PAGE
 router.get('/', function(req, res) {
@@ -118,7 +108,7 @@ router.post('/articles/delete/:id', function(req, res) {
   db.Article.findOneAndUpdate(
     { _id: req.params.id },
     { saved: false, notes: [] }
-  ).exec(function(err, doc) {
+  ).then(function(err, doc) {
     if (err) {
       console.log(err);
     } else {
