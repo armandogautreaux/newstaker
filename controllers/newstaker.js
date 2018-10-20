@@ -5,7 +5,7 @@ var axios = require('axios');
 var cheerio = require('cheerio');
 
 // REQUIRE MODEL
-var db = require('../models');
+var db = require('./models');
 
 //Get Route -HOME PAGE
 router.get('/', function(req, res) {
